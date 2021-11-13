@@ -1,0 +1,975 @@
+@media (max-width: 1920px) {
+  .title {
+    font-size: 80px;
+  }
+  .plans {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+    &__wrapper-box {
+      max-width: 960px;
+    }
+    &__title {
+      font-size: 100px;
+    }
+    &__plus {
+      margin-left: auto;
+    }
+  }
+}
+@media (max-width: 1800px) {
+  .classes {
+    &__preview-time {
+      right: 40px;
+    }
+  }
+}
+@media (max-width: 1540px) {
+  .teachers {
+    .slick-track {
+      text-align: center;
+    }
+    .slick-slide {
+      margin: 0 10px;
+    }
+    &__slide-bar {
+      display: none;
+      opacity: 0;
+    }
+    .teachers__slide {
+      opacity: 1;
+    }
+    &__slider-btns {
+      margin-top: 15px;
+    }
+  }
+  .workshops {
+    &__wrapper {
+      grid-gap: 15px;
+    }
+    &__status {
+      right: 38px;
+      top: 0;
+      transform: rotate(0);
+      padding: 9px 24px;
+      border-radius: 0 0 27px 27px;
+      z-index: 1;
+    }
+  }
+  .classes {
+    &__preview-time {
+      right: 40px;
+    }
+  }
+  .subs {
+    &__wrapper {
+      grid-gap: 15px;
+    }
+    &__box {
+      padding-top: 16px;
+    }
+    &__recommended {
+      top: 35px;
+      right: -51px;
+      font-size: 14px;
+    }
+    &__item {
+      min-height: 480px;
+    }
+    &__list-item {
+      font-size: 24px;
+      &::before {
+        top: 9px;
+      }
+    }
+    &__session {
+      font-size: 21px;
+      span::before {
+        top: 4px;
+      }
+    }
+    &__price {
+      font-size: 50px;
+      margin-bottom: 12px;
+    }
+    &__link {
+      padding: 15px 10px;
+      max-width: 230px;
+    }
+  }
+}
+@media (max-width: 1364px) {
+  .what {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__about {
+      margin-top: 60px;
+      margin-left: auto;
+    }
+    &__about-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    &__picture {
+      margin-right: 0;
+      align-self: flex-start;
+    }
+    &__slider {
+      &::before {
+        top: -40px;
+        left: 0;
+        width: 120px;
+        height: 83px;
+      }
+      &::after {
+        bottom: 40px;
+        right: 0;
+        width: 120px;
+        height: 83px;
+      }
+    }
+    &__slide-text {
+      font-size: 21px;
+    }
+  }
+}
+@media (max-width: 1260px) {
+  .header {
+    position: relative;
+    &__logo {
+      z-index: 21;
+    }
+    &__burger {
+      z-index: 21;
+    }
+    &__user {
+      z-index: 20;
+    }
+    &__menu {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      transform: translateY(-200px);
+      z-index: 20;
+    }
+    &__menu--active.header__menu {
+      display: flex;
+      transform: translateY(0);
+    }
+    &__menu--active .header__list {
+      flex-direction: column;
+      .header__item + .header__item {
+        margin-left: 0;
+      }
+    }
+    &__list {
+      background-color: #233133;
+    }
+    &__item {
+      max-width: 150px;
+      width: 100%;
+      padding-top: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      &:hover {
+        &::before {
+          display: none;
+        }
+      }
+    }
+    &__link {
+      max-width: 150px;
+      width: 100%;
+      padding-top: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    &__item--active {
+      display: none;
+    }
+    &__burger {
+      display: block;
+    }
+  }
+  .fixed-btns {
+    right: 40px;
+    &__btn {
+      width: 50px;
+      height: 50px;
+      box-shadow: 0 0 5px 2px #2aa82c;
+      &::before {
+        width: 25px;
+        height: 25px;
+        left: calc(50% - 12px);
+      }
+    }
+    &__btn:last-child {
+      &::before {
+        width: 30px;
+        height: 24px;
+        left: calc(50% - 15px);
+      }
+    }
+    &__btn + .fixed-btns__btn {
+      margin-top: 25px;
+    }
+  }
+  .plans {
+    &__slider {
+      margin-top: 0;
+    }
+  }
+  .teachers {
+    .slick-track {
+      height: 400px;
+    }
+    &__slide-img {
+      height: 296px;
+    }
+    &__slide-title {
+      font-size: 23px;
+      margin-bottom: 0;
+    }
+    &__slide-text {
+      font-size: 17px;
+    }
+  }
+  .why {
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__text + .why__text {
+      margin-top: 10px;
+    }
+    &__gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-gap: 45px;
+    }
+    &__img:nth-child(1) {
+      grid-column: 1 / 3;
+      grid-row: 2 / 4;
+    }
+    &__img:nth-child(2) {
+      grid-column: 3 / 5;
+      grid-row: 1 / 3;
+    }
+    &__img:nth-child(3) {
+      grid-column: 1 / 3;
+      grid-row: 4 / 6;
+    }
+    &__img:nth-child(4) {
+      grid-column: 3 / 5;
+      grid-row: 3 / 7;
+    }
+  }
+  .workshops {
+    &__data {
+      font-size: 21px;
+      max-width: 226px;
+      margin-left: 28px;
+      padding-top: 7px;
+    }
+    &__status {
+      right: 28px;
+      padding: 7px 24px;
+      font-size: 26px;
+    }
+  }
+  .classes {
+    &__text {
+      font-size: 21px;
+    }
+  }
+  .newsle {
+    &__text {
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+  }
+}
+@media (max-width: 1180px) {
+  .classes {
+    &__text {
+      margin-right: 20px;
+    }
+    &__preview-time {
+      top: 15px;
+      right: 15px;
+      width: 108px;
+      height: 108px;
+      font-size: 38px;
+      line-height: 90px;
+      border: 1px solid #000000;
+      &::after {
+        width: 118px;
+        height: 118px;
+      }
+    }
+    &__preview {
+      min-height: 550px;
+    }
+  }
+  .subs {
+    &__wrapper {
+      grid-template-columns: repeat(2, 310px);
+      grid-template-rows: repeat(2, 1fr);
+      justify-content: center;
+      grid-gap: 20px;
+    }
+    &__recommended {
+      top: 26px;
+      right: -50px;
+      font-size: 12px;
+    }
+    &__item {
+      min-height: 410px;
+    }
+    &__list-item {
+      font-size: 20px;
+      &::before {
+        top: 8px;
+        width: 21px;
+        height: 21px;
+      }
+    }
+    &__session {
+      font-size: 18px;
+      span::before {
+        top: 0;
+      }
+    }
+    &__price {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+    &__link {
+      max-width: 190px;
+      font-size: 17px;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .plans {
+    &__slider {
+      max-width: 535px;
+    }
+    &__title,
+    &__text {
+      font-size: 70px;
+    }
+    &__subtext {
+      font-size: 21px;
+    }
+    &__slide-title,
+    &__slide-text {
+      font-size: 21px;
+    }
+  }
+  .teachers {
+    padding-top: 75px;
+  }
+  .why {
+    padding-top: 75px;
+    &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 0;
+    }
+    &__gallery {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+  .what {
+    &__picture {
+      margin: 0 auto;
+    }
+    &__about {
+      margin: 60px auto;
+    }
+  }
+  .workshops {
+    padding: 40px 0 80px;
+    &__item {
+      min-height: 455px;
+    }
+    &__data {
+      max-width: 170px;
+      font-size: 18px;
+    }
+    &__status {
+      font-size: 21px;
+      border-radius: 0 0 10px 10px;
+    }
+    &__item-title {
+      font-size: 28px;
+    }
+    &__item-text {
+      padding: 10px 0 25px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    &__btns {
+      max-width: 585px;
+      margin: 0 auto 25px;
+    }
+    &__btn {
+      border-radius: 10px;
+      font-size: 21px;
+      padding: 12px 5px;
+      img {
+        margin-left: 13px;
+      }
+    }
+    &__btn + .workshops__btn {
+      margin-left: 20px;
+    }
+  }
+  .classes {
+    &__title {
+      text-align: center;
+    }
+    &__preview-link {
+      font-size: 21px;
+      padding: 12px 5px;
+      margin: 30px 0 35px;
+    }
+    &__preview-title {
+      max-width: 350px;
+      text-align: center;
+      font-size: 28px;
+    }
+    &__preview-author {
+      font-size: 24px;
+    }
+  }
+  .subs {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 830px) {
+  .what {
+    &__about {
+      max-width: 630px;
+    }
+  }
+  .workshops {
+    &__item {
+      min-height: 390px;
+    }
+    &__data {
+      margin-left: 10px;
+      padding-top: 7px;
+    }
+    &__status {
+      right: 10px;
+      padding: 7px 14px;
+    }
+  }
+  .newsle {
+    &__email {
+      padding: 15px 30px;
+      font-size: 19px;
+      &::placeholder {
+        font-size: 19px;
+      }
+    }
+    &__btn {
+      font-size: 19px;
+      padding: 15px 5px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+  .footer {
+    padding: 30px 0;
+    &__item-link {
+      width: 59px;
+      height: 59px;
+      &::before {
+        width: 15px;
+        height: 31px;
+        left: calc(50% - 8px);
+      }
+    }
+    &__item-link:nth-child(2) {
+      &::before {
+        width: 31px;
+        height: 25px;
+        left: calc(50% - 15px);
+      }
+    }
+    &__item-link:nth-child(3) {
+      &::before {
+        width: 31px;
+        height: 31px;
+        left: calc(50% - 15px);
+      }
+    }
+    &__item-link:last-child {
+      &::before {
+        width: 28px;
+        height: 28px;
+        left: calc(50% - 14px);
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 43px;
+  }
+  .header {
+    &__item {
+      text-align: center;
+    }
+  }
+  .plans {
+    padding-top: 35px;
+    &__wrapper-box {
+      max-width: 490px;
+    }
+    &__title {
+      -webkit-text-stroke-width: 0.5px;
+    }
+    &__title,
+    &__text {
+      font-size: 50px;
+    }
+    &__plus {
+      width: 150px;
+      height: 150px;
+      &::after {
+        width: 160px;
+        height: 160px;
+        right: -6px;
+      }
+      &::before {
+        width: 58px;
+        height: 58px;
+        top: -15px;
+        right: -15px;
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+    &__plus-text {
+      max-width: 110px;
+      font-size: 16px;
+      line-height: 21px;
+    }
+    &__subtext {
+      font-size: 18px;
+      max-width: 400px;
+    }
+    &__slider {
+      max-width: 400px;
+    }
+    &__slide-title,
+    &__slide-text {
+      font-size: 18px;
+    }
+  }
+  .what {
+    &__about {
+      max-width: 530px;
+    }
+    &__picture {
+      max-width: 404px;
+      &::before {
+        max-width: 340px;
+        height: 542px;
+        top: calc(50% - 271px);
+      }
+    }
+    &__picture-title {
+      font-size: 21px;
+      line-height: 34px;
+      margin-top: 5px;
+    }
+    &__picture-text {
+      font-size: 18px;
+      line-height: 29px;
+    }
+    &__slide-text {
+      font-size: 18px;
+    }
+  }
+  .workshops {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      max-width: 390px;
+    }
+    &__item:first-child {
+      margin-left: 30px;
+    }
+    &__item:last-child {
+      margin: 20px 30px 0 auto;
+    }
+    &__btns {
+      margin: 0 auto 10px;
+    }
+  }
+  .classes {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__preview-link {
+      margin: 30px 0 15px;
+    }
+    &__info {
+      order: 1;
+      margin-top: 25px;
+      max-width: 730px;
+    }
+    &__text {
+      margin-right: 0;
+      font-size: 18px;
+    }
+  }
+  .subs {
+    &__wrapper {
+      margin: 0;
+      grid-gap: 15px;
+    }
+  }
+}
+@media (max-width: 665px) {
+  .subs {
+    &__wrapper {
+      grid-template-columns: repeat(1, 320px);
+      grid-template-rows: repeat(4, 1fr);
+      grid-row-gap: 25px;
+    }
+  }
+  .footer {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      margin: 30px auto 30px;
+    }
+    &__item + .footer__item{
+      margin-top: 10px;
+    }
+    &__link {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__author-link {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+}
+@media (max-width: 565px) {
+  .header {
+    &__img {
+      width: 70px;
+    }
+    &__list {
+      padding-top: 110px;
+    }
+  }
+  .plans {
+    &__wrapper-box {
+      max-width: 390px;
+    }
+    &__title,
+    &__text {
+      font-size: 40px;
+    }
+  }
+  .why {
+    &__gallery {
+      margin-top: 15px;
+      grid-gap: 15px;
+    }
+  }
+  .what {
+    &__picture {
+      max-width: 303px;
+      &::before {
+        max-width: 280px;
+        height: 432px;
+        top: calc(50% - 216px);
+      }
+    }
+    &__about {
+      max-width: 430px;
+    }
+  }
+  .workshops {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      max-width: 390px;
+    }
+    &__item:first-child {
+      margin: 0 auto;
+    }
+    &__item:last-child {
+      margin: 20px auto 0;
+    }
+  }
+  .newsle {
+    &__form {
+      flex-direction: column;
+    }
+    &__btn {
+      margin: 10px 0;
+      max-width: 600px;
+      padding: 5px 5px;
+    }
+  }
+  .footer{
+    &__items{
+      max-width: 320px;
+    }
+    &__author{
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 510px) {
+  .plans {
+    &__slider {
+      max-width: 345px;
+    }
+  }
+  .subs {
+    &__wrapper {
+      grid-template-columns: repeat(1, 290px);
+      grid-row-gap: 25px;
+    }
+  }
+}
+@media (max-width: 460px) {
+  .what {
+    &__about {
+      max-width: 320px;
+    }
+  }
+}
+@media (max-width: 415px) {
+  .header {
+    &__top {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    &__burger {
+      margin: 10px auto 10px 10px;
+    }
+    &__user {
+      align-self: flex-end;
+    }
+    &__img {
+      padding-top: 10px;
+    }
+    &__list {
+      padding-top: 180px;
+    }
+  }
+  .fixed-btns {
+    right: 20px;
+    bottom: 20px;
+    &__btn {
+      width: 50px;
+      height: 50px;
+      &::before {
+        width: 25px;
+        height: 25px;
+        left: calc(50% - 12px);
+      }
+    }
+    &__btn:last-child {
+      &::before {
+        width: 32px;
+        height: 24px;
+        left: calc(50% - 16px);
+      }
+    }
+    &__btn + .fixed-btns__btn {
+      margin-top: 20px;
+    }
+  }
+  .plans {
+    &__title,
+    &__text {
+      font-size: 35px;
+      max-width: 340px;
+    }
+    &__plus {
+      width: 120px;
+      height: 120px;
+      &::after {
+        width: 130px;
+        height: 130px;
+        right: -6px;
+      }
+      &::before {
+        width: 48px;
+        height: 48px;
+        font-size: 13px;
+      }
+    }
+    &__plus-text {
+      max-width: 85px;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    &__subtext,
+    &__slide-title,
+    &__slide-text {
+      font-size: 15px;
+    }
+    &__slide-btns {
+      margin-top: 20px;
+      width: 80px;
+    }
+
+    &__slide-prev,
+    &__slide-next {
+      width: 35px;
+      height: 19px;
+    }
+    &__slide-prev.swiper-button-disabled,
+    &__slide-next.swiper-button-disabled {
+      width: 25px;
+      height: 12px;
+    }
+  }
+  .teachers {
+    &__slider-btns {
+      margin-top: 20px;
+      width: 80px;
+    }
+
+    &__prev-btn,
+    &__next-btn {
+      width: 35px;
+      height: 19px;
+    }
+  }
+  .why {
+    &__text {
+      font-size: 15px;
+    }
+  }
+  .what {
+    &__slide-text {
+      font-size: 16px;
+    }
+    &__slide-btns {
+      margin-top: 20px;
+      width: 80px;
+    }
+
+    &__slide-prev,
+    &__slide-next {
+      width: 35px;
+      height: 19px;
+    }
+    &__slide-prev.swiper-button-disabled,
+    &__slide-next.swiper-button-disabled {
+      width: 25px;
+      height: 12px;
+    }
+  }
+  .workshops {
+    &__item {
+      min-height: 340px;
+    }
+    &__item-text {
+      padding: 5px 0 10px;
+    }
+    &__btn {
+      font-size: 18px;
+      padding: 8px 5px;
+      img {
+        width: 25px;
+      }
+    }
+    .workshops__btn + .workshops__btn {
+      margin-left: 10px;
+    }
+  }
+  .classes {
+    &__preview-author {
+      font-size: 20px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .fixed-btns {
+    right: 20px;
+    bottom: 20px;
+    &__btn {
+      width: 40px;
+      height: 40px;
+      &::before {
+        width: 20px;
+        height: 20px;
+        left: calc(50% - 10px);
+      }
+    }
+    &__btn:last-child {
+      &::before {
+        width: 25px;
+        height: 21px;
+        left: calc(50% - 12px);
+      }
+    }
+    &__btn + .fixed-btns__btn {
+      margin-top: 20px;
+    }
+  }
+  .workshops {
+    &__data {
+      max-width: 130px;
+    }
+    &__status {
+      padding: 7px 10px;
+      font-size: 18px;
+    }
+  }
+  .newsle {
+    &__title {
+      font-size: 38px;
+    }
+  }
+}
+@media (max-width: 345px) {
+  .what {
+    &__about {
+      max-width: 290px;
+    }
+    &__about-title {
+      text-align: right;
+    }
+  }
+  .subs {
+    &__title {
+      font-size: 37px;
+    }
+  }
+}
