@@ -115,6 +115,11 @@
       background-color: $green;
       border-radius: 0 0 8px 8px;
     }
+    &:hover{
+      &::before{
+        transform: translateY(0);
+      }
+    }
     .header__link {
       color: $green;
     }
